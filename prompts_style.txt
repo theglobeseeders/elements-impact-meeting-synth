@@ -1,0 +1,4 @@
+À partir du JSON, génère un one-pager Markdown deck-ready (titres H2, puces courtes ≤ 12 mots,
+tableaux pour décisions & actions, section verbatims). Ajoute une section « Recommandations & pistes de collaboration »
+listant 3 recommandations stratégiques, 2 opportunités de collaboration et 2–3 différenciateurs liés à notre cabinet.
+Aucune divulgation interne du raisonnement.

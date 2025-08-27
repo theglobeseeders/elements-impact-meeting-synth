@@ -1,0 +1,4 @@
+00:01:05 – Alice : On avance bien sur le planning, mais il faut confirmer la date du pilote.
+00:02:10 – Alice : On valide le lancement pilote le 2025-09-15.
+00:05:32 – Bob : Paul prend le lead sur le recrutement des bêta-testeurs.
+00:07:45 – Alice : Risque principal : dépendance à l’API du fournisseur tiers.

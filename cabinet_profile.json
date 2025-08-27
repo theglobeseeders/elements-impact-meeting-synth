@@ -1,0 +1,106 @@
+{
+  "brand": "Elements Impact",
+  "tagline": "Accélérateur de projets positifs, du cadrage stratégique à l’exécution opérationnelle.",
+  "positioning": "Cabinet/collectif conjuguant rigueur méthodologique, excellence opérationnelle et sens business pour maximiser la réussite et l’impact des projets.",
+  "vision": "Un monde où l'humanité utilise ses ressources avec lucidité et intégrité.",
+  "mission": "Maximiser la réussite des projets à impact en les rendant plus pérennes, robustes et vertueux.",
+  "values": ["Bien commun", "Harmonie", "Exigence", "Intégrité"],
+  "factor_10": "Augmenter par 10 la probabilité de succès grâce au triptyque stratégie → exécution → impact.",
+  "proof_points": {
+    "projects_supported": "80+",
+    "freelancers_network": "300+",
+    "institutional_partners": "20+",
+    "r_and_d_impact_lab": true
+  },
+  "capabilities_360": [
+    "Stratégie: vision, plan d’action, business planning, modélisation et structuration financière",
+    "Opérations: croissance, finance & opérations, numérique & digitale, ressources humaines",
+    "Digital: audit/mentoring tech, externalisation produit/tech squads, innovation digitale",
+    "Impact: stratégie d’impact, mesure (Théorie du Changement, notice de mesure), data & reporting, communication"
+  ],
+  "business_lines": {
+    "Strategy": {
+      "client_questions": [
+        "Quelle stratégie pour atteindre mes objectifs ?",
+        "Comment engager investisseurs, équipes, prospects ?",
+        "Avec qui m’associer ? Comment lever des fonds ?",
+        "Comment sélectionner les meilleurs projets ?"
+      ],
+      "offers": [
+        "Stratégie business & Impact (vision, mission, plan d’action, modèle économique)",
+        "Théorie du Changement systémique",
+        "Mentoring CEO/CODIR, board member non exécutif",
+        "M&A/rapprochements, due diligence tech/business/impact"
+      ],
+      "engagement_models": ["Mission forfaitaire avec livrables", "# J/mois", "Commission transactionnelle"]
+    },
+    "Operations": {
+      "client_questions": [
+        "Quel C-Level recruter ?",
+        "Avons-nous l’expertise pour des missions digitales/commerciales ardues ?",
+        "Comment structurer équipes, outils, process pour passer à l’échelle ?",
+        "Sur qui s’appuyer en période de turbulences ?"
+      ],
+      "offers": [
+        "Recrutement dirigeants et cadres clés (CEO/CPO/CTO/CMO, etc.)",
+        "Talents freelances (Design, UX/UI, Product, Eng, Data, Growth)",
+        "Managers de transition / Operating Partners",
+        "Appui à la scalabilité post-levée/série"
+      ],
+      "engagement_models": ["Commission sur salaire brut annuel", "Taux jour", "Engagement en durée"]
+    },
+    "Digital": {
+      "client_questions": [
+        "Comment réussir ma transformation/plateforme digitale ?",
+        "Qui pour porter la responsabilité produit/tech ?",
+        "Comment sécuriser un CTO pour mener le projet ?"
+      ],
+      "offers": [
+        "Audit et mentoring technologique (via réseau d’experts/partenaires)",
+        "Externalisation produit & équipes pluridisciplinaires (product, engineering, data)",
+        "Accompagnement à l’innovation digitale; CIO/CTO externalisés"
+      ],
+      "engagement_models": ["Forfait", "Taux jour par consultant", "Forfait innovation"]
+    },
+    "Impact": {
+      "client_questions": [
+        "Comment aborder la problématique d’impact ?",
+        "Quels sont les impacts de mon projet et comment l’optimiser ?",
+        "Comment valider et promouvoir l’intérêt social ?",
+        "Comment arbitrer entre objectifs économiques et impact ?"
+      ],
+      "offers": [
+        "Théorie du Changement & alignement stratégique d’impact",
+        "Notice de mesure d’impact; spécifier/implémenter la collecte de données",
+        "BI/rapport d’impact annuel; reporting & compliance",
+        "Formations Impact Management (approches, cadres, pratiques)"
+      ],
+      "products_and_ip": [
+        "Boussole Impact® (outil d’aide à la décision pour allouer ressources/investissements selon critères opé/humains/éco/impact) — un produit d’Elements Impact, pas l’unique offre"
+      ],
+      "engagement_models": ["Forfait", "Abonnement annuel (Boussole) ou usage au projet"]
+    }
+  },
+  "differentiators": [
+    "Rigueur de top cabinet (MECE, Pyramid Principle, modélisation financière)",
+    "Excellence opérationnelle (ops, finance, RH, sales) et exécution terrain",
+    "Expertise digitale senior (audit tech, squads produit/engineering, CTO/CIO externalisés)",
+    "Impact management propriétaire (méthodo, outillage, reporting extra-financier)",
+    "Collectif d’experts mobilisables rapidement, expérience multi-secteurs",
+    "Capacité à passer de la vision à des résultats tangibles et mesurables"
+  ],
+  "internal_axes": {
+    "Accelerate": "Développement business, structuration d’équipes, recrutement C-level, externalisation produit/tech, accélération go-to-market, optimisation commerciale/ops.",
+    "Impact": "Stratégie/mise en œuvre d’impact, mesure et pilotage, data & reporting, communication ; activation ciblée de Boussole Impact® quand pertinent."
+  },
+  "style_and_tone": {
+    "principles": ["Clarté", "Hiérarchie de l’information", "Actionnabilité", "Sobriété"],
+    "do_not_overfocus_on": ["Boussole Impact® (n’est qu’un produit parmi d’autres)"]
+  },
+  "keywords": [
+    "Stratégie", "Business planning", "Modélisation", "M&A", "Scaling",
+    "Finance & opérations", "Recrutement C-level", "Managers de transition",
+    "Produit", "Engineering", "Data", "Externalisation digitale",
+    "Théorie du Changement", "Mesure d’impact", "Reporting extra-financier"
+  ]
+}

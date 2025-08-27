@@ -1,0 +1,3 @@
+Vérifie que chaque décision/action est appuyée par un verbatim ou un timecode.
+Marque checks.grounded=false si ce n’est pas le cas et liste les champs manquants.
+Ne modifie pas le fond.

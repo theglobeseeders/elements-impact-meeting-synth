@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MeetingSummary",
+  "type": "object",
+  "required": [
+    "objectives",
+    "key_points",
+    "synthesis",
+    "conclusion",
+    "next_steps",
+    "internal_analysis",
+    "verbatims"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "objectives": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "key_points": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "synthesis": {
+      "type": "array",
+      "description": "Bullet points structurés, chaque élément peut inclure des sous-points",
+      "items": { "type": "string" }
+    },
+    "conclusion": {
+      "type": "array",
+      "description": "Bullet points de conclusion et mise en perspective",
+      "items": { "type": "string" }
+    },
+    "next_steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["action", "owner", "deadline", "status"],
+        "additionalProperties": false,
+        "properties": {
+          "action": { "type": "string" },
+          "owner": { "type": "string" },
+          "deadline": { "type": "string", "description": "YYYY-MM-DD or TBD" },
+          "status": { "type": "string", "enum": ["à faire", "en cours", "bloqué", "fait", "TBD"] }
+        }
+      }
+    },
+    "internal_analysis": {
+      "type": "object",
+      "required": ["strategic_interest", "accelerate", "impact"],
+      "additionalProperties": false,
+      "properties": {
+        "strategic_interest": { "type": "string" },
+        "accelerate": { "type": "string" },
+        "impact": { "type": "string" }
+      }
+    },
+    "verbatims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["quote", "speaker"],
+        "additionalProperties": false,
+        "properties": {
+          "quote": { "type": "string" },
+          "speaker": { "type": "string" }
+        }
+      }
+    }
+  }
+}
