@@ -1,10 +1,9 @@
-import json, pathlib, traceback
+import os, json, pathlib, traceback
 import streamlit as st
 from dotenv import load_dotenv
 from openai import OpenAI
 from render_onepager import onepager_md, email_md
 
-# --- Chargement de la clé (secrets > .env) ---
 load_dotenv()
 api_key = st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY"))
 if not api_key:
