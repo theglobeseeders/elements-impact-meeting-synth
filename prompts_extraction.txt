@@ -1,16 +1,21 @@
-Lis les notes/transcript (peuvent être brutes, sans timecodes ni speakers).
-Produis EXCLUSIVEMENT un JSON valide conforme au schéma MeetingSummary (strict).
+Lis les notes/transcript ci-dessous (elles peuvent être brutes, sans timecodes ni speakers).
+
+Produis EXCLUSIVEMENT un JSON valide conforme au schéma MeetingSummary.
+
 Renseigne tous les champs requis :
 - objectives[] : 2–5 objectifs
-- key_points[] : 3–6 points MECE
-- synthesis[] : 4–8 bullets hiérarchisés si besoin
-- conclusion[] : 2–5 bullets hiérarchisés si besoin
-- next_steps[] : action, owner, deadline (YYYY-MM-DD ou ‘TBD’), status (‘à faire’ / ‘en cours’ / ‘bloqué’ / ‘fait’ / ‘TBD’)
+- key_points[] : chaque bullet doit commencer par un thème en **gras** suivi d’une explication concise. Tu peux ajouter des sous-bullets si nécessaire pour préciser.
+- synthesis[] : bullets organisés en 4 sous-sections (Forces, Faiblesses, Opportunités, Risques). Chaque item peut inclure des sous-bullets (séparateur "::" et ";").
+- conclusion[] : 2–5 bullet points d’implications stratégiques et recommandations, hiérarchisés si besoin.
+- next_steps[] : action, owner, deadline (YYYY-MM-DD ou ‘TBD’), status (‘à faire’ / ‘en cours’ / ‘bloqué’ / ‘fait’ / ‘TBD’).
 - internal_analysis : 
-   * strategic_interest : 2–4 bullets reliés à nos offres
-   * accelerate : propositions concrètes alignées avec Strategy/Operations/Digital
-   * impact : propositions concrètes alignées avec Impact (Boussole Impact® seulement si pertinent)
-- verbatims[] : 3–5 citations ; speaker=‘Note’ si inconnu
+   * strategic_interest : implications business globales.
+   * Elements accelerate : recommandations liées à Strategy / Operations / Digital (cf. cabinet_profile).
+   * Elements impact : recommandations liées à Impact (cf. cabinet_profile, Boussole Impact® seulement si pertinent).
+- verbatims[] : 3–5 verbatims saillants ; speaker=‘Note’ si inconnu.
 
-Tu dois exploiter le profil_cabinet (offres, business_lines, differentiators) pour garantir la pertinence business/stratégique de la section Interne.
-Ne fournis aucun texte hors JSON. Respecte strictement le schéma et additionalProperties:false.
+Règles :
+- Les "key_points" doivent impérativement suivre le format homogène : **Thème en gras** — explication claire et concise. 
+- Tu appliques systématiquement MECE et Pyramid Principle.
+- Tu utilises le profil_cabinet pour rédiger la section Interne en lien avec nos offres et métiers.
+- Respect strict du schéma et `additionalProperties:false`.

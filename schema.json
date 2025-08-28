@@ -19,17 +19,34 @@
     },
     "key_points": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string",
+        "maxLength": 240,
+        "description": "Format imposé : **Thème en gras** — explication concise. Sous-points gérés plus bas (Synthèse/Conclusion).",
+        "pattern": "^\\*\\*[^*]+\\*\\*\\s*(?:—|-)\\s*.+$"
+      },
+      "minItems": 3,
+      "maxItems": 8
     },
     "synthesis": {
       "type": "array",
-      "description": "Bullet points structurés, chaque élément peut inclure des sous-points",
-      "items": { "type": "string" }
+      "description": "Bullets FFOR (Forces, Faiblesses, Opportunités, Risques). Sous-bullets possibles avec le séparateur '::' puis ';'.",
+      "items": {
+        "type": "string",
+        "maxLength": 300
+      },
+      "minItems": 4,
+      "maxItems": 12
     },
     "conclusion": {
       "type": "array",
-      "description": "Bullet points de conclusion et mise en perspective",
-      "items": { "type": "string" }
+      "description": "Implications stratégiques et recommandations, sous forme de bullets (sous-bullets via '::' et ';').",
+      "items": {
+        "type": "string",
+        "maxLength": 260
+      },
+      "minItems": 2,
+      "maxItems": 8
     },
     "next_steps": {
       "type": "array",
@@ -38,21 +55,22 @@
         "required": ["action", "owner", "deadline", "status"],
         "additionalProperties": false,
         "properties": {
-          "action": { "type": "string" },
-          "owner": { "type": "string" },
+          "action": { "type": "string", "maxLength": 200 },
+          "owner": { "type": "string", "maxLength": 80 },
           "deadline": { "type": "string", "description": "YYYY-MM-DD or TBD" },
           "status": { "type": "string", "enum": ["à faire", "en cours", "bloqué", "fait", "TBD"] }
         }
-      }
+      },
+      "minItems": 1
     },
     "internal_analysis": {
       "type": "object",
       "required": ["strategic_interest", "accelerate", "impact"],
       "additionalProperties": false,
       "properties": {
-        "strategic_interest": { "type": "string" },
-        "accelerate": { "type": "string" },
-        "impact": { "type": "string" }
+        "strategic_interest": { "type": "string", "maxLength": 800 },
+        "accelerate": { "type": "string", "maxLength": 800 },
+        "impact": { "type": "string", "maxLength": 800 }
       }
     },
     "verbatims": {
@@ -62,10 +80,12 @@
         "required": ["quote", "speaker"],
         "additionalProperties": false,
         "properties": {
-          "quote": { "type": "string" },
-          "speaker": { "type": "string" }
+          "quote": { "type": "string", "maxLength": 240 },
+          "speaker": { "type": "string", "description": "Nom, rôle, ou 'Note' si inconnu", "maxLength": 80 }
         }
-      }
+      },
+      "minItems": 0,
+      "maxItems": 8
     }
   }
 }
