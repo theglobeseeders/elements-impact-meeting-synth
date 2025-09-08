@@ -1,0 +1,46 @@
+=== Elements Impact — Corpus interne (résumé exécutable) ===
+
+[Positionnement & promesse]
+- Accélérateur de projets positifs, du cadrage stratégique à l’exécution opérationnelle.
+- Triptyque différenciant : Stratégie → Opérations/Digital → Impact (mesure, pilotage, communication).
+- Promesse : augmenter par 10 la probabilité de succès grâce à la rigueur, l’excellence opérationnelle et le sens business.
+
+[Valeurs]
+- Bien commun | Harmonie | Exigence | Intégrité.
+
+[Différenciateurs]
+- Rigueur de top cabinet (MECE, Pyramid Principle, modélisation).
+- Excellence opérationnelle (finance, RH, process, sales) et exécution terrain.
+- Expertise digitale senior (audit tech, squads produit/engineering/data, CTO/CIO externalisés).
+- Impact management propriétaire (Théorie du Changement, notice/indicateurs, reporting extra-financier).
+- Collectif d’experts mobilisables rapidement, multi-secteurs.
+
+[Axes internes]
+- Accelerate : développement business, structuration d’équipes, recrutement C-level, externalisation produit/tech, go-to-market, optimisation ops/sales.
+- Impact : stratégie & mise en œuvre d’impact, mesure/pilotage (ToC, KPIs), data & reporting, communication. NB : Boussole Impact® = un produit parmi d’autres (à activer si pertinent, ne pas en faire le centre).
+
+[Business lines & offres phares]
+- Strategy : vision/mission, business planning & modélisation, mentoring CEO/CODIR, préparation CA/Comité Stratégique, M&A/due diligence (business/tech/impact).
+- Operations : structuration équipes/outils/process, recrutement C-level & cadres clés, managers de transition/operating partners, mise en place de pilotage opérationnel.
+- Digital : audit & mentoring technologique, externalisation produit (product/engineering/data), innovation digitale, CTO/CIO externalisés.
+- Impact : Théorie du Changement (alignement), notice de mesure, implémentation collecte de données, BI/rapport d’impact annuel, formations.
+
+[Use cases récurrents (à mobiliser en section Business Perspective)]
+- Gouvernance & embarquement : cadrer une vision, préparer un CA, clarifier rôles/indicateurs → ateliers + documents “deck-ready”.
+- Go-to-Market : de POC à récurrence (pipeline, sales playbook, pricing, unit economics).
+- Structuration : recruter/renforcer une équipe (C-level/experts), process & outils, pilotage rituel (OKR/KPI).
+- Roadmap digitale : cadrage produit, priorisation, staff/squad externalisé, CTO/CIO fractionné.
+- Impact management : ToC → indicateurs → collecte → restitution (tableaux de bord/rapport), communication interne/externe.
+- Benchmarks & compliance : comparaisons sectorielles, alignements RSE/DPEF, RGPD/IA Act (quand pertinent).
+
+[Lignes rouges / style]
+- Pas de jargon vide. Pas de promesses vagues.
+- Ne pas sur-focaliser Boussole Impact® : c’est un outil d’aide à la décision, pas l’offre entière.
+- Sortie attendue “deck-ready” : bullets avec thème en **gras** — explication concise, sous-bullets si besoin.
+- Adapter le cadre d’analyse (MECE, roadmap, enjeux/risques/opportunités) sans l’imposer mécaniquement.
+
+[Phrases-type à adapter]
+- “**Embarquement de la gouvernance** — clarifier la finalité, les rôles, les rituels et les indicateurs clés.”
+- “**Passage du POC à la récurrence** — structurer un funnel, un sales playbook et un modèle économique robuste.”
+- “**Pilotage d’impact** — traduire la mission en ToC, indicateurs mesurables et restitutions lisibles.”
+- “**Accélération produit/digitale** — cadrer la roadmap, sécuriser la delivery (squad) et l’adoption.”

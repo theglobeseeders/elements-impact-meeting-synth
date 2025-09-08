@@ -2,90 +2,45 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "MeetingSummary",
   "type": "object",
-  "required": [
-    "objectives",
-    "key_points",
-    "synthesis",
-    "conclusion",
-    "next_steps",
-    "internal_analysis",
-    "verbatims"
-  ],
+  "required": ["objectives", "synthesis", "key_issues", "conclusion_next_steps", "business_perspective", "verbatims"],
   "additionalProperties": false,
   "properties": {
     "objectives": {
       "type": "array",
+      "description": "Objectifs principaux de la réunion",
       "items": { "type": "string" }
-    },
-    "key_points": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "maxLength": 240,
-        "description": "Format imposé : **Thème en gras** — explication concise. Sous-points gérés plus bas (Synthèse/Conclusion).",
-        "pattern": "^\\*\\*[^*]+\\*\\*\\s*(?:—|-)\\s*.+$"
-      },
-      "minItems": 3,
-      "maxItems": 8
     },
     "synthesis": {
       "type": "array",
-      "description": "Bullets FFOR (Forces, Faiblesses, Opportunités, Risques). Sous-bullets possibles avec le séparateur '::' puis ';'.",
-      "items": {
-        "type": "string",
-        "maxLength": 300
-      },
-      "minItems": 4,
-      "maxItems": 12
+      "description": "Synthèse des échanges — analyse libre, style homogène : **Thème en gras** — explication concise. Sous-bullets possibles via '::' et ';'.",
+      "items": { "type": "string" }
     },
-    "conclusion": {
+    "key_issues": {
       "type": "array",
-      "description": "Implications stratégiques et recommandations, sous forme de bullets (sous-bullets via '::' et ';').",
-      "items": {
-        "type": "string",
-        "maxLength": 260
-      },
-      "minItems": 2,
-      "maxItems": 8
+      "description": "Principaux enjeux — risques, opportunités, arbitrages. Style homogène.",
+      "items": { "type": "string" }
     },
-    "next_steps": {
+    "conclusion_next_steps": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["action", "owner", "deadline", "status"],
-        "additionalProperties": false,
-        "properties": {
-          "action": { "type": "string", "maxLength": 200 },
-          "owner": { "type": "string", "maxLength": 80 },
-          "deadline": { "type": "string", "description": "YYYY-MM-DD or TBD" },
-          "status": { "type": "string", "enum": ["à faire", "en cours", "bloqué", "fait", "TBD"] }
-        }
-      },
-      "minItems": 1
+      "description": "Conclusion et prochaines étapes — recommandations stratégiques et actions. Style homogène.",
+      "items": { "type": "string" }
     },
-    "internal_analysis": {
-      "type": "object",
-      "required": ["strategic_interest", "accelerate", "impact"],
-      "additionalProperties": false,
-      "properties": {
-        "strategic_interest": { "type": "string", "maxLength": 800 },
-        "accelerate": { "type": "string", "maxLength": 800 },
-        "impact": { "type": "string", "maxLength": 800 }
-      }
+    "business_perspective": {
+      "type": "string",
+      "description": "Mise en perspective business pour Elements, nourrie par le corpus interne (Strategy / Operations / Digital / Impact)."
     },
     "verbatims": {
       "type": "array",
+      "description": "Citations clés professionnelles (pas personnelles).",
       "items": {
         "type": "object",
         "required": ["quote", "speaker"],
         "additionalProperties": false,
         "properties": {
           "quote": { "type": "string", "maxLength": 240 },
-          "speaker": { "type": "string", "description": "Nom, rôle, ou 'Note' si inconnu", "maxLength": 80 }
+          "speaker": { "type": "string", "description": "Nom, rôle, ou 'Note' si inconnu" }
         }
-      },
-      "minItems": 0,
-      "maxItems": 8
+      }
     }
   }
 }

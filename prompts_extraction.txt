@@ -1,21 +1,15 @@
-Lis les notes/transcript ci-dessous (elles peuvent être brutes, sans timecodes ni speakers).
-
+Lis les notes/transcript (texte ou audio transcrit). 
 Produis EXCLUSIVEMENT un JSON valide conforme au schéma MeetingSummary.
 
 Renseigne tous les champs requis :
-- objectives[] : 2–5 objectifs
-- key_points[] : chaque bullet doit commencer par un thème en **gras** suivi d’une explication concise. Tu peux ajouter des sous-bullets si nécessaire pour préciser.
-- synthesis[] : bullets organisés en 4 sous-sections (Forces, Faiblesses, Opportunités, Risques). Chaque item peut inclure des sous-bullets (séparateur "::" et ";").
-- conclusion[] : 2–5 bullet points d’implications stratégiques et recommandations, hiérarchisés si besoin.
-- next_steps[] : action, owner, deadline (YYYY-MM-DD ou ‘TBD’), status (‘à faire’ / ‘en cours’ / ‘bloqué’ / ‘fait’ / ‘TBD’).
-- internal_analysis : 
-   * strategic_interest : implications business globales.
-   * Elements accelerate : recommandations liées à Strategy / Operations / Digital (cf. cabinet_profile).
-   * Elements impact : recommandations liées à Impact (cf. cabinet_profile, Boussole Impact® seulement si pertinent).
-- verbatims[] : 3–5 verbatims saillants ; speaker=‘Note’ si inconnu.
+- objectives[] : 2–5 objectifs clairs.
+- synthesis[] : bullets homogènes (**Thème en gras** — explication concise). Analyse libre, cadre adapté (pas SWOT forcé).
+- key_issues[] : 3–6 enjeux clés (risques, opportunités, arbitrages). Style homogène.
+- conclusion_next_steps[] : recommandations stratégiques et actions concrètes. Style homogène.
+- business_perspective : paragraphe nourri par tout le corpus interne (Strategy / Operations / Digital / Impact / cas clients). Boussole Impact® seulement si pertinent.
+- verbatims[] : 3–5 citations professionnelles ; speaker = “Note” si inconnu. Exclure toute citation personnelle.
 
-Règles :
-- Les "key_points" doivent impérativement suivre le format homogène : **Thème en gras** — explication claire et concise. 
-- Tu appliques systématiquement MECE et Pyramid Principle.
-- Tu utilises le profil_cabinet pour rédiger la section Interne en lien avec nos offres et métiers.
+Contraintes :
+- Exclure tous les échanges personnels, ne garder que le contenu professionnel.
+- Respect strict du style : **Thème en gras** — explication concise. 
 - Respect strict du schéma et `additionalProperties:false`.
